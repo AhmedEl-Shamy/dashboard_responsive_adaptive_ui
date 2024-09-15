@@ -9,7 +9,7 @@ class DashboardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: AppColors.kGrey1,
+      backgroundColor: AppColors.kGrey2,
       body: DashboardPageBody(),
     );
   }

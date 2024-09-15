@@ -6,13 +6,13 @@ abstract class AppTextStyles {
   // Font Size 12
   static const TextStyle kStyleRegular12 = TextStyle(
     fontSize: 12,
-    color: AppColors.kGrey4,
+    color: AppColors.kGrey5,
   );
 
   // Font Size 14
   static const TextStyle kStyleRegular14 = TextStyle(
     fontSize: 14,
-    color: AppColors.kGrey4,
+    color: AppColors.kGrey5,
   );
 
   // Font Size 16

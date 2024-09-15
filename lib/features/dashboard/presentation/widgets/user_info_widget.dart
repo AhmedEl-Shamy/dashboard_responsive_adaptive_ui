@@ -16,7 +16,7 @@ class UserInfoWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       margin: EdgeInsets.zero,
-      color: AppColors.kGrey2,
+      color: AppColors.kGrey3,
       elevation: 0,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(

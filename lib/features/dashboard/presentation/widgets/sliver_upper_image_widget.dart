@@ -16,7 +16,7 @@ class SliverUpperImageWidget extends StatelessWidget {
         width: double.infinity,
         height: 50,
         margin: const EdgeInsets.symmetric(horizontal: 20),
-        color: AppColors.kGrey3,
+        color: AppColors.kGrey4,
         child: SvgPicture.asset(
           AppAssets.kImagesImageIcon,
           fit: BoxFit.scaleDown,
