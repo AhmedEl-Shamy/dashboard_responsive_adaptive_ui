@@ -18,13 +18,19 @@ class DashboardDesktopLayout extends StatelessWidget {
           width: AppConstants.kMainSpace,
         ),
         Expanded(
-          flex: 3,
+          flex: 2,
           child: Padding(
             padding: EdgeInsets.symmetric(
               vertical: 35,
             ),
             child: MidSectionWidget(),
           ),
+        ),
+        SizedBox(
+          width: AppConstants.kMainSpace,
+        ),
+        Expanded(
+          child: Placeholder(),
         )
       ],
     );

@@ -11,10 +11,6 @@ abstract class AppAssets {
   /// assets/images/avatart_2.svg
   static const String kImagesAvatart2 = "assets/images/avatart_2.svg";
 
-  /// Assets for kImagesAvatart3
-  /// assets/images/avatart_3.svg
-  static const String kImagesAvatart3 = "assets/images/avatart_3.svg";
-
   /// Assets for kImagesBalance
   /// assets/images/balance.svg
   static const String kImagesBalance = "assets/images/balance.svg";

@@ -1,17 +1,18 @@
+import 'package:admin_dashboard/core/models/user_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../../../core/utlis/app_assets.dart';
 import '../../../../core/utlis/app_colors.dart';
 import '../../../../core/utlis/app_text_styles.dart';
 
 class UserInfoWidget extends StatelessWidget {
   const UserInfoWidget({
     super.key,
-    required this.username,
-    required this.email,
+    required this.user,
+    this.avatarDimension,
   });
-  final String username, email;
+  final UserModel user;
+  final double? avatarDimension;
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -26,13 +27,17 @@ class UserInfoWidget extends StatelessWidget {
       child: ListTile(
         onTap: () {},
         leading: SvgPicture.asset(
-          AppAssets.kImagesAvatart1,
+          user.avatar,
+          width: avatarDimension,
+          height: avatarDimension,
         ),
         title: Text(
-          username,
+          user.username,
+          overflow: TextOverflow.ellipsis,
         ),
         subtitle: Text(
-          email,
+          user.email,
+          overflow: TextOverflow.ellipsis,
         ),
         titleTextStyle: AppTextStyles.kStyleSemiBold16,
         subtitleTextStyle: AppTextStyles.kStyleRegular12,

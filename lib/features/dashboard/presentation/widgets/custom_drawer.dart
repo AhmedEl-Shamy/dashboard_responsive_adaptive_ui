@@ -1,5 +1,7 @@
+import 'package:admin_dashboard/core/models/user_model.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../core/utlis/app_assets.dart';
 import '../../../../core/utlis/app_colors.dart';
 import 'drawer_bottom_section.dart';
 import 'drawer_sliver_list_items.dart';
@@ -24,11 +26,19 @@ class CustomDrawer extends StatelessWidget {
           ),
           SliverToBoxAdapter(
             child: UserInfoWidget(
-              username: 'Ahmed El-Shamy',
-              email: 'ahmedelshamy@gmail.com',
+              user: UserModel(
+                username: 'Ahmed El-Shamy',
+                email: 'ahmedelshamy@gmail.com',
+                avatar: AppAssets.kImagesAvatart1,
+              ),
+              avatarDimension: 32,
             ),
           ),
-
+          SliverToBoxAdapter(
+            child: SizedBox(
+              height: 10,
+            ),
+          ),
           DrawerItemsSliverList(),
           DrawerBottomSection(),
         ],
