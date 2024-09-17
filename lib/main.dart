@@ -13,6 +13,7 @@ class AdminDashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Admin Dashboard',
       theme: ThemeData(
         fontFamily: AppAssets.kMainFontFamily,
         colorScheme: ColorScheme.fromSeed(seedColor: AppColors.kBlue1),

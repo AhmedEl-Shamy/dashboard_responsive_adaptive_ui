@@ -16,8 +16,8 @@ abstract class AppAssets {
   static const String kImagesBalance = "assets/images/balance.svg";
 
   /// Assets for kImagesCardBgPattern
-  /// assets/images/card_bg_pattern.svg
-  static const String kImagesCardBgPattern = "assets/images/card_bg_pattern.svg";
+  /// assets/images/card_bg_pattern.png
+  static const String kImagesCardBgPattern = "assets/images/card_bg_pattern.png";
 
   /// Assets for kImagesDashboard
   /// assets/images/dashboard.svg

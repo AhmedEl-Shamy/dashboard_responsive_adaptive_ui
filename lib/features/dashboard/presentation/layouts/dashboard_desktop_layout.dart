@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../widgets/custom_drawer.dart';
 import '../widgets/mid_section_widget.dart';
+import '../widgets/right_side_section.dart';
 
 class DashboardDesktopLayout extends StatelessWidget {
   const DashboardDesktopLayout({super.key});
@@ -30,9 +31,15 @@ class DashboardDesktopLayout extends StatelessWidget {
           width: AppConstants.kMainSpace,
         ),
         Expanded(
-          child: Placeholder(),
+          child: Padding(
+            padding: EdgeInsets.symmetric(
+              vertical: 35,
+            ),
+            child: RightSideSection(),
+          ),
         )
       ],
     );
   }
 }
+
