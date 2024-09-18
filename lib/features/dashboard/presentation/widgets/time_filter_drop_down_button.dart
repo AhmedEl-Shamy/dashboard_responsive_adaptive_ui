@@ -43,7 +43,7 @@ class _TimeFilterDropDownButtonState extends State<TimeFilterDropDownButton> {
             Icons.arrow_back_ios_new_rounded,
           ),
         ),
-        iconEnabledColor: AppColors.kBlue2,
+        iconEnabledColor: AppColors.kBlue3,
         onChanged: (value) {
           setState(() {
             currentValue = value ?? TimeFilterDropDownButton.options[1];

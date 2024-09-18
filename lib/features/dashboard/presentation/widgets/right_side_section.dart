@@ -1,7 +1,7 @@
 import 'package:admin_dashboard/core/utlis/app_constants.dart';
 import 'package:flutter/material.dart';
 
-import 'custom_background_container.dart';
+import 'income_section.dart';
 import 'my_card_section.dart';
 
 class RightSideSection extends StatelessWidget {
@@ -15,7 +15,7 @@ class RightSideSection extends StatelessWidget {
       child: Column(
         children: [
           const SizedBox(
-            height: AppConstants.kTopBottomSpace,
+            height: AppConstants.kEndSpace,
           ),
           MyCardAndTransactionsSection(
             controller: PageController(),
@@ -23,11 +23,9 @@ class RightSideSection extends StatelessWidget {
           const SizedBox(
             height: AppConstants.kMainSpace,
           ),
-          const CustomBackgroundContainer(
-            child: Placeholder(),
-          ),
+          const IncomeSection(),
           const SizedBox(
-            height: AppConstants.kTopBottomSpace,
+            height: AppConstants.kEndSpace,
           ),
         ],
       ),

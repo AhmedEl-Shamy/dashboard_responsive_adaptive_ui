@@ -13,21 +13,26 @@ class DashboardDesktopLayout extends StatelessWidget {
     return const Row(
       children: [
         Expanded(
+          flex: 3,
           child: CustomDrawer(),
         ),
         SizedBox(
           width: AppConstants.kMainSpace,
         ),
         Expanded(
-          flex: 2,
+          flex: 6,
           child: MidSectionWidget(),
         ),
         SizedBox(
           width: AppConstants.kMainSpace,
         ),
         Expanded(
+          flex: 4,
           child: RightSideSection(),
-        )
+        ),
+        SizedBox(
+          width: AppConstants.kEndSpace,
+        ),
       ],
     );
   }

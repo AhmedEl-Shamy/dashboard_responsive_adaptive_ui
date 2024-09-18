@@ -13,7 +13,7 @@ class MidSectionWidget extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(
-            height: AppConstants.kTopBottomSpace,
+            height: AppConstants.kEndSpace,
           ),
           AllExpensesWidget(),
           SizedBox(
@@ -21,7 +21,7 @@ class MidSectionWidget extends StatelessWidget {
           ),
           QuickInvoiceWidget(),
           SizedBox(
-            height: AppConstants.kTopBottomSpace,
+            height: AppConstants.kEndSpace,
           ),
         ],
       ),

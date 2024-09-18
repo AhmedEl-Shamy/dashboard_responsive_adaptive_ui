@@ -21,19 +21,19 @@ abstract class AppTextStyles {
   // Font Size 16
   static const TextStyle kStyleRegular16 = TextStyle(
     fontSize: 16,
-    color: AppColors.kBlue2,
+    color: AppColors.kBlue3,
     fontFamily: AppAssets.kMainFontFamily,
   );
   static const TextStyle kStyleMedium16 = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w500,
-    color: AppColors.kBlue2,
+    color: AppColors.kBlue3,
     fontFamily: AppAssets.kMainFontFamily,
   );
   static const TextStyle kStyleSemiBold16 = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w600,
-    color: AppColors.kBlue2,
+    color: AppColors.kBlue3,
     fontFamily: AppAssets.kMainFontFamily,
   );
   static const TextStyle kStyleBold16 = TextStyle(
@@ -61,7 +61,7 @@ abstract class AppTextStyles {
   static const TextStyle kStyleSemiBold20 = TextStyle(
     fontSize: 20,
     fontWeight: FontWeight.w600,
-    color: AppColors.kBlue2,
+    color: AppColors.kBlue3,
     fontFamily: AppAssets.kMainFontFamily,
   );
 

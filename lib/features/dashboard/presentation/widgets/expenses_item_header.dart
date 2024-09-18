@@ -33,7 +33,7 @@ class ExpensesItemHeader extends StatelessWidget {
         ),
         Icon(
           Icons.arrow_forward_ios_rounded,
-          color: imageColor ?? AppColors.kBlue2,
+          color: imageColor ?? AppColors.kBlue3,
         )
       ],
     );
