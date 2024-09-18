@@ -10,5 +10,8 @@ abstract class AppColors {
   static const Color kGrey5 = Color(0xFFAAAAAA);
   static const Color kGrey6 = Color(0xFFE8E8E8);
   static const Color kWhite = Colors.white;
+  static const Color kRed = Color(0xFFF3735E);
+  static const Color kGreen = Color(0xFF7DD97B);
+
   
 }

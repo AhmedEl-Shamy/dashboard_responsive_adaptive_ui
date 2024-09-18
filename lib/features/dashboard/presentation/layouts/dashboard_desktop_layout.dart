@@ -20,23 +20,13 @@ class DashboardDesktopLayout extends StatelessWidget {
         ),
         Expanded(
           flex: 2,
-          child: Padding(
-            padding: EdgeInsets.symmetric(
-              vertical: 35,
-            ),
-            child: MidSectionWidget(),
-          ),
+          child: MidSectionWidget(),
         ),
         SizedBox(
           width: AppConstants.kMainSpace,
         ),
         Expanded(
-          child: Padding(
-            padding: EdgeInsets.symmetric(
-              vertical: 35,
-            ),
-            child: RightSideSection(),
-          ),
+          child: RightSideSection(),
         )
       ],
     );

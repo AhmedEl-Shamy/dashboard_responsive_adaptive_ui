@@ -12,15 +12,19 @@ class MidSectionWidget extends StatelessWidget {
     return const SingleChildScrollView(
       child: Column(
         children: [
+          SizedBox(
+            height: AppConstants.kTopBottomSpace,
+          ),
           AllExpensesWidget(),
           SizedBox(
             height: AppConstants.kMainSpace,
           ),
           QuickInvoiceWidget(),
+          SizedBox(
+            height: AppConstants.kTopBottomSpace,
+          ),
         ],
       ),
     );
   }
 }
-
-

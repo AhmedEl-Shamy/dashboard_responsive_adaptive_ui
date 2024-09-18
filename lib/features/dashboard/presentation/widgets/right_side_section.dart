@@ -1,3 +1,4 @@
+import 'package:admin_dashboard/core/utlis/app_constants.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_background_container.dart';
@@ -10,20 +11,26 @@ class RightSideSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomBackgroundContainer(
+    return SingleChildScrollView(
       child: Column(
         children: [
-          MyCardSection(
+          const SizedBox(
+            height: AppConstants.kTopBottomSpace,
+          ),
+          MyCardAndTransactionsSection(
             controller: PageController(),
-          )
+          ),
+          const SizedBox(
+            height: AppConstants.kMainSpace,
+          ),
+          const CustomBackgroundContainer(
+            child: Placeholder(),
+          ),
+          const SizedBox(
+            height: AppConstants.kTopBottomSpace,
+          ),
         ],
       ),
     );
   }
 }
-
-
-
-
-
-
