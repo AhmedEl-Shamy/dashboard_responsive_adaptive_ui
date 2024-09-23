@@ -31,13 +31,13 @@ class TransactionHistoryItem extends StatelessWidget {
         subtitle: Text(
           transactionModel.date,
         ),
-        titleTextStyle: AppTextStyles.kStyleSemiBold16,
-        subtitleTextStyle: AppTextStyles.kStyleMedium16.copyWith(
+        titleTextStyle: AppTextStyles.kStyleSemiBold16(context),
+        subtitleTextStyle: AppTextStyles.kStyleMedium16(context).copyWith(
           color: AppColors.kGrey5,
         ),
         trailing: Text(
           transactionModel.amount,
-          style: AppTextStyles.kStyleSemiBold20.copyWith(
+          style: AppTextStyles.kStyleSemiBold20(context).copyWith(
             color: transactionModel.transctionType == TransactionType.deposite
                 ? AppColors.kGreen
                 : AppColors.kRed,

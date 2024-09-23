@@ -8,14 +8,14 @@ class AllExpensesHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
           'All Expenses',
-          style: AppTextStyles.kStyleSemiBold20,
+          style: AppTextStyles.kStyleSemiBold20(context),
         ),
-        TimeFilterDropDownButton(),
+        const TimeFilterDropDownButton(),
       ],
     );
   }

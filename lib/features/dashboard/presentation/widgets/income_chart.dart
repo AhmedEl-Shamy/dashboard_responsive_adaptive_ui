@@ -10,20 +10,39 @@ class IncomeChart extends StatelessWidget {
   final List<ChartItemModel> items;
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        ChartWidget(
-          items: items,
-        ),
-        const SizedBox(
-          width: AppConstants.kEndSpace,
-        ),
-        Expanded(
-          child: ChartDetails(
-            items: items,
-          ),
-        ),
-      ],
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        if (constraints.maxWidth > 325) {
+          return Row(
+            children: [
+              Expanded(
+                child: ChartWidget(
+                  items: items,
+                ),
+              ),
+              const SizedBox(
+                width: AppConstants.kEndSpace,
+              ),
+              Expanded(
+                flex: 2,
+                child: ChartDetails(
+                  items: items,
+                ),
+              ),
+            ],
+          );
+        } else {
+          return Column(
+            children: [
+              ChartWidget(items: items),
+              const SizedBox(
+                height: 16,
+              ),
+              ChartDetails(items: items),
+            ],
+          );
+        }
+      },
     );
   }
 }

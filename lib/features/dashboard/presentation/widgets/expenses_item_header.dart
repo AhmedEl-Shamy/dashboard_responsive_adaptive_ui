@@ -1,3 +1,4 @@
+import 'package:admin_dashboard/core/utlis/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -20,20 +21,23 @@ class ExpensesItemHeader extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        CircleAvatar(
-          radius: 30,
-          backgroundColor: imageBGColor ?? AppColors.kGrey3,
-          child: SvgPicture.asset(
-            expensesItemData.iconAsset,
-            colorFilter: ColorFilter.mode(
-              imageColor ?? AppColors.kBlue1,
-              BlendMode.srcIn,
+        Flexible(
+          child: CircleAvatar(
+            radius: 30,
+            backgroundColor: imageBGColor ?? AppColors.kGrey3,
+            child: SvgPicture.asset(
+              expensesItemData.iconAsset,
+              colorFilter: ColorFilter.mode(
+                imageColor ?? AppColors.kBlue1,
+                BlendMode.srcIn,
+              ),
             ),
           ),
         ),
         Icon(
           Icons.arrow_forward_ios_rounded,
           color: imageColor ?? AppColors.kBlue3,
+          size: 24 * SizeConfig.getScalingFactor(context),
         )
       ],
     );

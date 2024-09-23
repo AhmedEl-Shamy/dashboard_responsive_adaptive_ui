@@ -21,7 +21,7 @@ class QuickInvoiceInputField extends StatelessWidget {
       children: [
         Text(
           title,
-          style: AppTextStyles.kStyleMedium16,
+          style: AppTextStyles.kStyleMedium16(context),
         ),
         const SizedBox(
           height: 12,

@@ -57,14 +57,14 @@ class CardInfo extends StatelessWidget {
               children: [
                 Text(
                   'Name Card',
-                  style: AppTextStyles.kStyleRegular16.copyWith(
+                  style: AppTextStyles.kStyleRegular16(context).copyWith(
                     color: AppColors.kWhite,
                   ),
                   
                 ),
                 Text(
                   cardData.cardName,
-                  style: AppTextStyles.kStyleMedium20,
+                  style: AppTextStyles.kStyleMedium20(context),
                   
                 ),
               ],
@@ -78,13 +78,13 @@ class CardInfo extends StatelessWidget {
         const Spacer(),
         Text(
           cardData.cardNumber,
-          style: AppTextStyles.kStyleSemiBold24.copyWith(
+          style: AppTextStyles.kStyleSemiBold24(context).copyWith(
             color: AppColors.kWhite,
           ),
         ),
         Text(
           '${cardData.expirationDate} - ${cardData.securityCode}',
-          style: AppTextStyles.kStyleRegular16.copyWith(
+          style: AppTextStyles.kStyleRegular16(context).copyWith(
             color: AppColors.kWhite,
           ),
           

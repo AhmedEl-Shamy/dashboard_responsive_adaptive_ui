@@ -55,7 +55,7 @@ class _TimeFilterDropDownButtonState extends State<TimeFilterDropDownButton> {
                 value: e,
                 child: Text(
                   e,
-                  style: AppTextStyles.kStyleMedium16,
+                  style: AppTextStyles.kStyleMedium16(context),
                 ),
               ),
             )

@@ -34,12 +34,12 @@ class ChartDetails extends StatelessWidget {
             ),
             Text(
               items[index].name,
-              style: AppTextStyles.kStyleRegular16,
+              style: AppTextStyles.kStyleRegular16(context),
             ),
             const Spacer(),
             Text(
-              items[index].percentage.toString(),
-              style: AppTextStyles.kStyleMedium16.copyWith(
+              '%${items[index].percentage.toString()}',
+              style: AppTextStyles.kStyleMedium16(context).copyWith(
                 color: AppColors.kBlue2,
               ),
             ),

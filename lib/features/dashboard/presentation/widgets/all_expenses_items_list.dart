@@ -4,16 +4,16 @@ import '../../../../core/models/expenses_item_model.dart';
 import '../../../../core/utlis/app_assets.dart';
 import 'expenses_item_widget.dart';
 
-class ExpensesItemsList extends StatefulWidget {
-  const ExpensesItemsList({
+class AllExpensesItemsList extends StatefulWidget {
+  const AllExpensesItemsList({
     super.key,
   });
 
   @override
-  State<ExpensesItemsList> createState() => _ExpensesItemsListState();
+  State<AllExpensesItemsList> createState() => _AllExpensesItemsListState();
 }
 
-class _ExpensesItemsListState extends State<ExpensesItemsList> {
+class _AllExpensesItemsListState extends State<AllExpensesItemsList> {
   int selectedItem = 0;
   @override
   Widget build(BuildContext context) {

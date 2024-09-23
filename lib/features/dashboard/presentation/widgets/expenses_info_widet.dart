@@ -18,28 +18,37 @@ class ExpensesItemInfoWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          expensesItemData.title,
-          style: AppTextStyles.kStyleSemiBold16.copyWith(
-            color: titleColor,
+        FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Text(
+            expensesItemData.title,
+            style: AppTextStyles.kStyleSemiBold16(context).copyWith(
+              color: titleColor,
+            ),
           ),
         ),
         const SizedBox(
           height: 8,
         ),
-        Text(
-          expensesItemData.date,
-          style: AppTextStyles.kStyleRegular14.copyWith(
-            color: dateColor,
+        FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Text(
+            expensesItemData.date,
+            style: AppTextStyles.kStyleRegular14(context).copyWith(
+              color: dateColor,
+            ),
           ),
         ),
         const SizedBox(
           height: 16,
         ),
-        Text(
-          expensesItemData.price,
-          style: AppTextStyles.kStyleSemiBold24.copyWith(
-            color: titleColor,
+        FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Text(
+            expensesItemData.price,
+            style: AppTextStyles.kStyleSemiBold24(context).copyWith(
+              color: titleColor,
+            ),
           ),
         ),
       ],

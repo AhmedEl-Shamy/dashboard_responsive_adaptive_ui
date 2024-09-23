@@ -44,10 +44,10 @@ class _ChartWidgetState extends State<ChartWidget> {
         widget.items.length,
         (index) => PieChartSectionData(
           showTitle: selectedSection == index,
-          titleStyle: AppTextStyles.kStyleSemiBold18.copyWith(
+          titleStyle: AppTextStyles.kStyleSemiBold18(context).copyWith(
             color: AppColors.kWhite,
           ),
-          radius: selectedSection == index ? 30 : 25,
+          radius: selectedSection == index ? 40 : 30,
           value: widget.items[index].percentage,
           color: widget.items[index].color,
         ),

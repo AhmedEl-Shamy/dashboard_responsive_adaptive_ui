@@ -39,8 +39,8 @@ class UserInfoWidget extends StatelessWidget {
           user.email,
           overflow: TextOverflow.ellipsis,
         ),
-        titleTextStyle: AppTextStyles.kStyleSemiBold16,
-        subtitleTextStyle: AppTextStyles.kStyleRegular12,
+        titleTextStyle: AppTextStyles.kStyleSemiBold16(context),
+        subtitleTextStyle: AppTextStyles.kStyleRegular12(context),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(
             12,

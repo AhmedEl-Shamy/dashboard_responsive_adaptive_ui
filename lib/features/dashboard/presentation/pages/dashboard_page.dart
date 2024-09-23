@@ -18,7 +18,7 @@ class DashboardPage extends StatelessWidget {
               ),
               backgroundColor: AppColors.kWhite,
               title: const Text('Admin Dashboard'),
-              titleTextStyle: AppTextStyles.kStyleSemiBold20,
+              titleTextStyle: AppTextStyles.kStyleSemiBold20(context),
             )
           : null,
       drawer: SizedBox(

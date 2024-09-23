@@ -19,9 +19,9 @@ class MyCardAndTransactionsSection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
+          Text(
             'My Card',
-            style: AppTextStyles.kStyleSemiBold20,
+            style: AppTextStyles.kStyleSemiBold20(context),
           ),
           const SizedBox(
             height: 20,

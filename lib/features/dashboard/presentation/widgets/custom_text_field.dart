@@ -18,11 +18,11 @@ class CustomTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       keyboardType: inputType,
-      style: AppTextStyles.kStyleRegular16,
+      style: AppTextStyles.kStyleRegular16(context),
       decoration: InputDecoration(
         hintText: hint,
         prefix: leading,
-        hintStyle: AppTextStyles.kStyleRegular16.copyWith(
+        hintStyle: AppTextStyles.kStyleRegular16(context).copyWith(
           color: AppColors.kGrey5,
         ),
         enabledBorder: buildBorder(),

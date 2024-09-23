@@ -27,7 +27,7 @@ class CustomButton extends StatelessWidget {
               AppConstants.kMainBorderRadius,
             ),
           ),
-          textStyle: AppTextStyles.kStyleSemiBold18,
+          textStyle: AppTextStyles.kStyleSemiBold18(context),
         ),
         child: Text(
           text,

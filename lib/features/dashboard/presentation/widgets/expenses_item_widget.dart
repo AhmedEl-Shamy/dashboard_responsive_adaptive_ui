@@ -1,3 +1,4 @@
+import 'package:admin_dashboard/core/utlis/size_config.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/models/expenses_item_model.dart';
@@ -26,7 +27,7 @@ class ExpensesItemWidget extends StatelessWidget {
         crossFadeState: (isActivated)
             ? CrossFadeState.showSecond
             : CrossFadeState.showFirst,
-        duration: AppConstants.kMainAnimationDuration,        
+        duration: AppConstants.kMainAnimationDuration,
       ),
     );
   }
@@ -43,7 +44,9 @@ class NormalExpensesItem extends StatelessWidget {
     return MouseRegion(
       cursor: SystemMouseCursors.click,
       child: Container(
-        padding: const EdgeInsets.all(AppConstants.kMainPadding),
+        padding: EdgeInsets.all(
+          AppConstants.kMainPadding * SizeConfig.getScalingFactor(context),
+        ),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(AppConstants.kMainBorderRadius),
           border: Border.all(
@@ -81,10 +84,18 @@ class ActivatedExpensesItem extends StatelessWidget {
     return MouseRegion(
       cursor: SystemMouseCursors.click,
       child: Container(
-        padding: const EdgeInsets.all(AppConstants.kMainPadding),
+        padding: EdgeInsets.all(
+          AppConstants.kMainPadding * SizeConfig.getScalingFactor(context),
+        ),
         decoration: BoxDecoration(
           color: AppColors.kBlue1,
-          borderRadius: BorderRadius.circular(AppConstants.kMainBorderRadius),
+          borderRadius: BorderRadius.circular(
+            AppConstants.kMainBorderRadius,
+          ),
+          border: Border.all(
+            width: 1,
+            color: Colors.transparent,
+          ),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,

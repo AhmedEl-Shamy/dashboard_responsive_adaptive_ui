@@ -13,9 +13,9 @@ class QuickInvoiceHeader extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        const Text(
+        Text(
           'Quick Invoice',
-          style: AppTextStyles.kStyleSemiBold20,
+          style: AppTextStyles.kStyleSemiBold20(context),
         ),
 
         SizedBox.square(

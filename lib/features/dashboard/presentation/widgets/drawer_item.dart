@@ -27,8 +27,8 @@ class DrawerItem extends StatelessWidget {
         contentPadding: const EdgeInsets.all(5),
         title: AnimatedDefaultTextStyle(
           style: (isActive)
-              ? AppTextStyles.kStyleBold16
-              : AppTextStyles.kStyleRegular16,
+              ? AppTextStyles.kStyleBold16(context)
+              : AppTextStyles.kStyleRegular16(context),
           duration: const Duration(milliseconds: 250),
           child: Text(drawerItemData.title),
         ),

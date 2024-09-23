@@ -1,3 +1,4 @@
+import 'package:admin_dashboard/core/utlis/size_config.dart';
 import 'package:flutter/material.dart';
 
 class AdaptiveLayoutSelector extends StatelessWidget {
@@ -14,12 +15,13 @@ class AdaptiveLayoutSelector extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        if (constraints.maxWidth < 800) {
-          return mobileLayout(context);
-        } else if (constraints.maxWidth < 1200) {
-          return tabletLayout(context);
-        } else {
-          return desktopLayout(context);
+        switch(SizeConfig.getLayoutType(context)){
+          case DeviceLayoutType.mobile:
+            return mobileLayout(context);
+          case DeviceLayoutType.tablet:
+            return tabletLayout(context);
+          case DeviceLayoutType.desktop:
+            return desktopLayout(context);
         }
       },
     );
